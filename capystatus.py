@@ -45,7 +45,7 @@ def render_frame(is_success, failure_stage=0, step=0):
          " __ _________________________.",        # Row 1: Crown Line
          "(  )                   |     \\",        # Row 2: Brow Spacer Line
          "|   |                  | (O) |",        # Row 3: Brow/Snout Ridge
-        f"|  {eye}                 \\-----/",        # Row 4: Eye Level
+        f"|  {eye}                 \\_____/",        # Row 4: Eye Level
          "|   |                      |",          # Row 5: Jowl/Mouth Spacer Line
         f"|   |                    {me}-|",          # Row 6: Chin Depth Line
          "\\_________________________/ "           # Row 7: Jaw Base Boundary Line
