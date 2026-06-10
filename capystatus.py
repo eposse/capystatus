@@ -41,14 +41,14 @@ def render_frame(is_success, failure_stage=0, step=0):
     eye = "(O)" if is_success else "(X)"
     me = "\\" if is_success else "/"
     head_overlay = [
-         ".-.",                                   # Row 0: Ears
-         "(   )________________________.",        # Row 1: Crown Line
-         "|                      |     |",        # Row 2: Brow Spacer Line
+         "   ",                                   # Row 0: Ears
+         " __ _________________________.",        # Row 1: Crown Line
+         "(  )                   |     \\",        # Row 2: Brow Spacer Line
          "|   |                  | (O) |",        # Row 3: Brow/Snout Ridge
-        f"|  {eye}                 |-----|",        # Row 4: Eye Level
+        f"|  {eye}                 \\-----/",        # Row 4: Eye Level
          "|   |                      |",          # Row 5: Jowl/Mouth Spacer Line
         f"|   |                    {me}-|",          # Row 6: Chin Depth Line
-         "|__________________________|"           # Row 7: Jaw Base Boundary Line
+         "\\_________________________/ "           # Row 7: Jaw Base Boundary Line
     ]
 
     # 3. CONSOLE GRID BLITTING (Starts safely at row 0, perfectly aligned with the padded body)
